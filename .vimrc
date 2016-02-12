@@ -1,6 +1,22 @@
-
-"Using Vundle.
+"-----------------------------------------------------------------------"
+"Using Vundle."
 set nocompatible
+filetype off
+
+"set the run time path"
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"let Vundle manage Vundle."
+Plugin 'VundleVim/Vundle.vim'
+
+
+
+
+
+call vundle#end()
+filetype plugin indent on
+"-----------------------------------------------------------------------"
 
 
 "my Settings.
@@ -11,21 +27,22 @@ set nocompatible
 :set bg=dark
 :set incsearch
 :set encoding=utf-8
+:set nu
 
-"highlight.
+"highlight."
 :syntax enable
 
-"fast key.(auto rightSide)
+"fast key.(auto rightSide)"
 :inoremap ( ()<ESC>i
 :inoremap " ""<ESC>i
 :inoremap ' ''<ESC>i
 :inoremap [ []<ESC>i
 
-"fast key.(loop\condition\struct)
+"fast key.(loop\condition\struct)"
 :inoremap {<CR> {<CR>}<ESC>ko
 :inoremap {{ {}<ESC>i
 
-"fast key.(routine)
+"fast key.(routine)"
 :inoremap ## #include <><ESC>i
 :inoremap r0 return 0;
 
