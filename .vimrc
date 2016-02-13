@@ -7,11 +7,11 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"let Vundle manage Vundle."
-Plugin 'VundleVim/Vundle.vim'
-
-
-
+	"let Vundle manage Vundle."
+	Plugin 'VundleVim/Vundle.vim'
+	Plugin 'The-NERD-tree'
+	"Plugin 'simple_playground.vim'"
+	Plugin 'AutoComplPop'
 
 
 call vundle#end()
@@ -19,6 +19,7 @@ filetype plugin indent on
 "-----------------------------------------------------------------------"
 
 
+"-----------------------------------------------------------------------"
 "my Settings.
 :set ai
 :set cursorline
