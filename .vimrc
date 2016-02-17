@@ -12,12 +12,13 @@ call vundle#begin()
 	Plugin 'The-NERD-tree'
 	"Plugin 'simple_playground.vim'"
 	Plugin 'AutoComplPop'
-
+	"Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
 "-----------------------------------------------------------------------"
-
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/'
+let g:ycm_confirm_extra_conf=0
 
 "-----------------------------------------------------------------------"
 "my Settings.
@@ -50,6 +51,7 @@ filetype plugin indent on
 filetype indent on
 
 :hi LineNr cterm=bold ctermfg=LightBlue ctermbg=NONE
+:hi CursorLineNr cterm=bold ctermfg=RED ctermbg=NONE
 
 
 
