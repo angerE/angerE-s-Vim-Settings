@@ -1,9 +1,6 @@
-"-----------------------------------------------------------------------"
-"Using Vundle."
 set nocompatible
 filetype off
 
-"set the run time path"
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -12,16 +9,15 @@ call vundle#begin()
 	Plugin 'The-NERD-tree'
 	"Plugin 'simple_playground.vim'"
 	Plugin 'AutoComplPop'
-	"Plugin 'Valloric/YouCompleteMe'
+	"Plugin 'Valloric/YouCompleteMe'"
 
 call vundle#end()
 filetype plugin indent on
-"-----------------------------------------------------------------------"
+
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/'
 let g:ycm_confirm_extra_conf=0
 
-"-----------------------------------------------------------------------"
-"my Settings.
+"my Settings
 :set ai
 :set cursorline
 :set tabstop=4
@@ -30,23 +26,22 @@ let g:ycm_confirm_extra_conf=0
 :set incsearch
 :set encoding=utf-8
 :set nu
+:hi Comment cterm=bold
 
-"highlight."
 :syntax enable
 
-"fast key.(auto rightSide)"
 :inoremap ( ()<ESC>i
 :inoremap " ""<ESC>i
 :inoremap ' ''<ESC>i
 :inoremap [ []<ESC>i
 
-"fast key.(loop\condition\struct)"
 :inoremap {<CR> {<CR>}<ESC>ko
 :inoremap {{ {}<ESC>i
 
-"fast key.(routine)"
 :inoremap ## #include <><ESC>i
 :inoremap r0 return 0;
+:inoremap /* /**/<ESC>hi
+
 
 filetype indent on
 
